@@ -38,9 +38,6 @@
         <assignmentItems>
             <assignToReference>Contact.Id</assignToReference>
             <operator>Assign</operator>
-            <value>
-                <stringValue>changeMe</stringValue>
-            </value>
         </assignmentItems>
         <connector>
             <targetReference>Pay_Screen</targetReference>
@@ -156,13 +153,6 @@
                 <elementReference>id</elementReference>
             </value>
         </filters>
-        <filters>
-            <field>Id</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>id</elementReference>
-            </value>
-        </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
         <object>cpm__Installment__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
@@ -183,13 +173,6 @@
         <filterLogic>or</filterLogic>
         <filters>
             <field>cpm__GUID__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>id</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>Id</field>
             <operator>EqualTo</operator>
             <value>
                 <elementReference>id</elementReference>
@@ -331,7 +314,7 @@
                 <fieldType>Region</fieldType>
                 <fields>
                     <name>Debug_Display_Text2</name>
-                    <fieldText>&lt;p&gt;{!Pay_Button_Existing.result.statusCode} - {!Pay_Button_Existing.result.errorMessage}&lt;/p&gt;</fieldText>
+                    <fieldText>&lt;p&gt;&lt;em&gt;This debug section is only visible when you are logged in as a System Administrator.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;em&gt;&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;&lt;/em&gt;&lt;span style=&quot;color: rgb(153, 0, 0);&quot;&gt;{!Pay_Button_Existing.result.statusCode} - {!Pay_Button_Existing.result.errorMessage}&lt;/span&gt;&lt;/p&gt;</fieldText>
                     <fieldType>DisplayText</fieldType>
                     <styleProperties>
                         <verticalAlignment>
@@ -512,7 +495,7 @@
                 <fieldType>Region</fieldType>
                 <fields>
                     <name>Debug_Display_Text</name>
-                    <fieldText>&lt;p&gt;{!Pay_Button.result.statusCode} - {!Pay_Button.result.errorMessage}&lt;/p&gt;</fieldText>
+                    <fieldText>&lt;p&gt;&lt;em&gt;This debug section is only visible when you are logged in as a System Administrator.&lt;/em&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(169, 0, 0);&quot;&gt;{!Pay_Button.result.statusCode} - {!Pay_Button.result.errorMessage}&lt;/span&gt;&lt;/p&gt;</fieldText>
                     <fieldType>DisplayText</fieldType>
                     <styleProperties>
                         <verticalAlignment>
