@@ -93,17 +93,17 @@
     <formulas>
         <name>Button_Display_Text</name>
         <dataType>String</dataType>
-        <expression>$Label.c.ec_pay_button_prefix + CASE({!currency}, &apos;EUR&apos;, &apos;€&apos;, &apos;USD&apos;, &apos;$&apos;, &apos;GBP&apos;, &apos;£&apos;, {!currency} + &apos; &apos;) + TEXT({!amount})</expression>
+        <expression>$Label.ec_pay_button_prefix + " " + CASE({!currency}, &apos;EUR&apos;, &apos;€&apos;, &apos;USD&apos;, &apos;$&apos;, &apos;GBP&apos;, &apos;£&apos;, {!currency} + &apos; &apos;) + TEXT({!amount})</expression>
     </formulas>
     <formulas>
         <name>Frequency_Display_Text</name>
         <dataType>String</dataType>
-        <expression>if({!frequency}=&apos;oneTime&apos;, $Label.c.ec_frequency_label_one_time, $Label.c.ec_frequency_label_monthly)</expression>
+        <expression>if({!frequency}=&apos;oneTime&apos;, $Label.ec_frequency_label_one_time, $Label.ec_frequency_label_monthly)</expression>
     </formulas>
     <formulas>
         <name>Frequency_Display_Text_Existing</name>
         <dataType>String</dataType>
-        <expression>IF(ISNULL({!Get_Recurring_Payment.Id}), $Label.c.ec_frequency_label_one_time, INITCAP(TEXT({!Get_Recurring_Payment.cpm__Frequency__c})))</expression>
+        <expression>IF(ISNULL({!Get_Recurring_Payment.Id}), $Label.ec_frequency_label_one_time, INITCAP(TEXT({!Get_Recurring_Payment.cpm__Frequency__c})))</expression>
     </formulas>
     <formulas>
         <name>Is_Current_User_Sys_Admin</name>

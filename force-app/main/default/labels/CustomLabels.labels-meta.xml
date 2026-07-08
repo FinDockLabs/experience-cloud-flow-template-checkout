@@ -7,7 +7,7 @@
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Prefix shown before the amount on the pay button (e.g. "Pay €167.00")</shortDescription>
-        <value>Pay </value>
+        <value>Pay</value>
     </labels>
     <labels>
         <fullName>ec_frequency_label_one_time</fullName>
